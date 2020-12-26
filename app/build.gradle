@@ -4,6 +4,10 @@ android {
     compileSdkVersion 28
     buildToolsVersion "20.0.0"
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         applicationId "io.voxhub.accessibility.app"
         minSdkVersion 15
@@ -16,7 +20,7 @@ android {
             minifyEnabled true
             shrinkResources true
            // proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            runProguard false
+            runProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
